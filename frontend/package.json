@@ -10,6 +10,8 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@emoji-mart/data": "^1.2.1",
+    "@emoji-mart/react": "^1.1.1",
     "@splinetool/react-spline": "^4.0.0",
     "axios": "^1.7.9",
     "chat-application": "file:..",
