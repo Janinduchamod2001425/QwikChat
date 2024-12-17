@@ -18,7 +18,7 @@ const Navbar = () => {
                 <MessageSquare className="w-5 h-5 text-primary" />
               </div>
               {/* Brand Name */}
-              <h1 className="text-lg font-bold">Chatty</h1>
+              <h1 className="text-lg font-bold">QwikChat</h1>
             </Link>
           </div>
 
