@@ -14,7 +14,7 @@ const MessageInput = () => {
 
   const fileInputRef = useRef(null);
   const emojiPickerRef = useRef(null);
-  const filePickerRef = useRef(null);
+  const filePickerRef = useRef(null); // Ref for file picker dropdown
   const { sendMessage } = useChatStore();
 
   // Close emoji/file picker on outside click

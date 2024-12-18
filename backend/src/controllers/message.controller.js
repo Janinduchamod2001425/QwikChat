@@ -1,5 +1,6 @@
 import User from "../models/user.model.js";
 import Message from "../models/message.model.js";
+
 import cloudinary from "../lib/cloudinary.js";
 import { getReceiverSocketId, io } from "../lib/socket.js";
 
@@ -38,34 +39,26 @@ export const getMessages = async (req, res) => {
 
 export const sendMessage = async (req, res) => {
   try {
-    const { text, file } = req.body; // `file` should be a base64 string
+    const { text, image } = req.body;
     const { id: receiverId } = req.params;
     const senderId = req.user._id;
 
-    let fileUrl;
-    if (file) {
-      // Validate base64 file
-      if (typeof file === "string" && file.startsWith("data:")) {
-        const uploadResponse = await cloudinary.uploader.upload(file, {
-          resource_type: "auto", // Detect file type automatically
-        });
-        fileUrl = uploadResponse.secure_url;
-      } else {
-        throw new Error("Invalid file input. Must be a valid base64 string.");
-      }
+    let imageUrl;
+    if (image) {
+      // Upload base64 image to cloudinary
+      const uploadResponse = await cloudinary.uploader.upload(image);
+      imageUrl = uploadResponse.secure_url;
     }
 
-    // Create new message
     const newMessage = new Message({
       senderId,
       receiverId,
       text,
-      file: fileUrl, // Save the file URL
+      image: imageUrl,
     });
 
     await newMessage.save();
 
-    // Notify receiver via WebSocket
     const receiverSocketId = getReceiverSocketId(receiverId);
     if (receiverSocketId) {
       io.to(receiverSocketId).emit("newMessage", newMessage);
@@ -73,7 +66,7 @@ export const sendMessage = async (req, res) => {
 
     res.status(201).json(newMessage);
   } catch (error) {
-    console.error("Error in sendMessage controller:", error.message);
+    console.log("Error in sendMessage controller: ", error.message);
     res.status(500).json({ error: "Internal server error" });
   }
 };
