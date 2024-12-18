@@ -18,6 +18,12 @@ const messageSchema = new mongoose.Schema(
     image: {
       type: String,
     },
+    file: {
+      url: { type: String }, // File URL (e.g., from Cloudinary)
+      name: { type: String }, // Original file name
+      type: { type: String }, // MIME type (e.g., application/pdf)
+      size: { type: Number }, // File size in bytes
+    },
   },
   { timestamps: true }
 );
