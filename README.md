@@ -1,4 +1,4 @@
-# Full Stack Chat Application
+# Full Stack Chat Application 💬🗣️
 
 ![Chat App Demo](./assets/chatapp.png)
 
