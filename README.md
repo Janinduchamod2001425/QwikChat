@@ -1,8 +1,11 @@
-# Full Stack Chat Application 💬🗣️
+# 💬🗣️ QwikChat - Full Stack Chat Application 
+
+<img src="https://go-skill-icons.vercel.app/api/icons?i=react,nodejs,mongodb,express,socketio,tailwind,daisyui" />
+
+A real-time chat application built with **React**, **Node.js**, **Express**, **MongoDB**, **Cloudinary**, **DaisyUI**, **Tailwind CSS**, **Socket.IO**, **JWT**, and more. This application allows users to create accounts, send messages in real-time, share images, and use an emoji picker for a more interactive experience.
 
 ![Chat App Demo](./assets/chatapp.png)
 
-A real-time chat application built with **React**, **Node.js**, **Express**, **MongoDB**, **Cloudinary**, **DaisyUI**, **Tailwind CSS**, **Socket.IO**, **JWT**, and more. This application allows users to create accounts, send messages in real-time, share images, and use an emoji picker for a more interactive experience.
 
 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" width="30" height="30" alt="React Logo"> &nbsp;&nbsp;&nbsp;<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" width="30" height="30" alt="Node.js Logo"> &nbsp;&nbsp;&nbsp;<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-plain.svg" width="30" height="30" alt="MongoDB Logo"> &nbsp;&nbsp;&nbsp;<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/express/express-original.svg" width="30" height="30" alt="Express.js Logo"> &nbsp;&nbsp;&nbsp;<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg" width="30" height="30" alt="Tailwind Logo"> &nbsp;&nbsp;&nbsp;<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/socketio/socketio-original.svg" width="30" height="30" alt="Socket.io Logo">
 
