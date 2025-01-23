@@ -6,11 +6,7 @@ A real-time chat application built with **React**, **Node.js**, **Express**, **M
 
 ![Chat App Demo](./assets/chatapp.png)
 
-
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" width="30" height="30" alt="React Logo"> &nbsp;&nbsp;&nbsp;<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" width="30" height="30" alt="Node.js Logo"> &nbsp;&nbsp;&nbsp;<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-plain.svg" width="30" height="30" alt="MongoDB Logo"> &nbsp;&nbsp;&nbsp;<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/express/express-original.svg" width="30" height="30" alt="Express.js Logo"> &nbsp;&nbsp;&nbsp;<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg" width="30" height="30" alt="Tailwind Logo"> &nbsp;&nbsp;&nbsp;<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/socketio/socketio-original.svg" width="30" height="30" alt="Socket.io Logo">
-
-
-## Features
+## 🚀 Features
 
 - **User Authentication**: Users can sign up, log in, and manage their profiles.
 - **Real-Time Messaging**: Send and receive messages instantly without delays using **Socket.IO**.
@@ -19,7 +15,7 @@ A real-time chat application built with **React**, **Node.js**, **Express**, **M
 - **Responsive UI**: Designed with **Tailwind CSS** and **DaisyUI** for an elegant and responsive user interface.
 - **JWT Authentication**: Secure user authentication with **JWT** tokens.
 
-## Tech Stack
+## 👁️ Tech Stack
 
 - **Frontend**:
   - React
@@ -41,13 +37,13 @@ A real-time chat application built with **React**, **Node.js**, **Express**, **M
 
 ### create React + vite frontend
 
-```
+```bash
 npm create vite@latest
 ```
 
 ### run the frontend folder
 
-```
+```bash
 cd frontend
 npm install
 npm run dev
@@ -55,7 +51,7 @@ npm run dev
 
 ### run the backend folder
 
-```
+```bash
 cd backend
 npm install
 npm run dev
@@ -63,19 +59,19 @@ npm run dev
 
 ### install node packages to the backend folder
 
-```
+```bash
 npm init -y
 ```
 
 ### install nodemon devDependencies
 
-```
+```bash
 npm i nodemon -D
 ```
 
 ### .env configuration
 
-```
+```env
 MONGODB_URI=mongodb+srv://janiduchamod25:123@chat.64s7a.mongodb.net/chat_db?retryWrites=true&w=majority&appName=Chat
 PORT=5001
 JWT_SECRET=mysecretkey
